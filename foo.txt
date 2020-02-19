@@ -1,0 +1,11 @@
+Fault Invalid Post Request means that the post data that
+we entered is not valid.
+Recall that w
+e add the information inside the body of the request,
+so we need to enter something into
+the request body and see
+if that format matches the format expected.
+ Also, you can see at the status
+ code which says 400 BAD Request.
+It means that the request parameters are not matching
+the server parameters to get a response.

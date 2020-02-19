@@ -1,37 +1,38 @@
-l=[1,4,0,0,6,0,7,0,0,5]
-print([j for j in l if j==0]+[i for i in l if i!=0])
+s="hello"
+s1=""
+for i in s:
+    s1=i+s1
+print(s1)
 
-# stack
+st="hello world python"
+sr=' '.join(word[::-1] for word in st.split(" "))
+print(sr)
+z = 'Best website is Tutorials Point'
+print(z.find('Tutorials'))
 
-stack = []
+print([ (a,b) for a in range(3) for b in range(a) ])
 
-stack.append('b')
-stack.append('c')
-stack.append("a")
 
-print('Initial stack',stack)
-# print(stack)
+d0 = { 'a':1, 'b':2}
+d1 = { 'a':3, 'b':4}
+p=d1 > d0
+print(p)
 
-print('\nElements poped from stack:')
-print(stack.pop())
-print(stack.pop())
-# print(stack.pop())
+for i in ['t', 'n', 'i ', 'o', 'p'][::-1]:
+   print(i)
 
-print('\nStack after elements are poped:',stack)
-# print(stack)
+a='19' == 19
+print(a)
 
-# queue
-from collections import deque
-queue = deque(["Ram", "Tarun", "Asif", "John"])
-print(queue)
-queue.append("Akbar")
-print(queue)
-queue.append("Birbal")
-print(queue)
-print(queue.popleft())
-print(queue.popleft())
-print(queue)
+def total(initial =5, *num, **key):
+   count = initial
+   for n in num:
+       count+=n
+   for k in key:
+       count+=key[k]
+   return count
+print(total(100,2,3, clouds=50, stars=100))
 
-a=[7,4,3,5,6,9,1]
-x=8
-print ([(x-k,k) for k in a if (x-k) in a])
+tinylist = [123, 'john']
+print(tinylist * 2 )\
+
